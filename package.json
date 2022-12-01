@@ -1,8 +1,7 @@
 {
-  "name": "a99-group04",
-  "version": "1.0.0",
-  "description": "A web app that allows trading of second-handed items",
-  "main": "index.js",
+  "name": "tradenc",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -40,15 +39,5 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/comp426-2022-fall/a99-Group04.git"
-  },
-  "author": "COMP 426 Group 4",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/comp426-2022-fall/a99-Group04/issues"
-  },
-  "homepage": "https://github.com/comp426-2022-fall/a99-Group04#readme"
+  }
 }
