@@ -24,5 +24,4 @@ function Login({setIsAuth}){
     </div>
   );
 }
-
 export default Login;
