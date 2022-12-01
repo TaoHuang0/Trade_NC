@@ -26,7 +26,7 @@ function App() {
         <div>
           <img className = "tradeNCLogo" src={logo} alt="tradenc"/>
         </div>
-        <Link className="wlogin" to="/"> Home </Link>
+        <Link className="wlogin" to="/App"> Home </Link>
         {!isAuth ? (
           <Link className="wlogin" to="/login"> Login </Link>
         ) : (
@@ -37,7 +37,7 @@ function App() {
         )}
       </nav>
       <Routes>
-        <Route path="/" element={<Home isAuth={isAuth} />} />
+        <Route path="/App" element={<Home isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
