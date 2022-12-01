@@ -16,7 +16,7 @@ We met on Nov 20 to brainstorm final project ideas
     - Finish video recording and api documentation by 12/08
 - We will meet at 11/30 at 11:00 again to discuss our project in more detail
 
-
+--------------------------------------------------------------------
 ## Meeting Two
 We met on 12/01
 - We created a repo and start writing README.md file
