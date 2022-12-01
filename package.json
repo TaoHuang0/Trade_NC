@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A web app that allows trading of second-handed items",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
