@@ -1,5 +1,6 @@
+// Import functions, docs, and packages
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
@@ -7,10 +8,10 @@ import Login from "./pages/Login";
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
-
-
 import logo from './tradeNC.jpeg';
 
+// Initiate the webpage
+// Using isAuth to determine the user status 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   const signUserOut = () => {
@@ -21,11 +22,12 @@ function App() {
     });
   };
 
+  //Generate UI using react-router-dom
   return (
     <Router>
       <nav>
         <div>
-          <img className = "tradeNCLogo" src={logo} alt="tradenc"/>
+          <img className="tradeNCLogo" src={logo} alt="tradenc" />
         </div>
         <Link className="wlogin" to="/App"> Home </Link>
         {!isAuth ? (

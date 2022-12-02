@@ -1,3 +1,6 @@
+// Webpage for creating a post to sell an item on tradeNC website
+
+// Import functions, docs, and packages
 import React, { useEffect, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
@@ -6,7 +9,9 @@ import { storage } from "../firebase-config";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
 
+// Initiate the create post webpage
 const CreatePost = ({ isAuth }) => {
+  // Set up title, post text, item price, contact info, image, school name features
   const [title, setTitle] = useState("");
   const [postText, setPostText] = useState("");
   const [itemPrice, setItemPrice] = useState("");
@@ -15,6 +20,7 @@ const CreatePost = ({ isAuth }) => {
   const [imgRef, setImgRef] = useState("");
   const [schoolName, setSchoolName] = useState("");
 
+  // Upload image function
   const uploadImage = () => {
     if (imageUpload == null) return;
     const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
@@ -28,6 +34,7 @@ const CreatePost = ({ isAuth }) => {
 
   let navigate = useNavigate();
 
+  // Check whether fill all of the forms/blanks, otherwise send an alert
   const postsCollectionRef = collection(db, "posts");
   const createPost = async () => {
     if (title === "" || postText === "" || itemPrice === "" || contactInfo === "" || imgRef === "") {
@@ -35,6 +42,7 @@ const CreatePost = ({ isAuth }) => {
       return;
     }
 
+    // Add new item doc to database
     const d = new Date();
     const myPostTime = d.toLocaleDateString();
     console.log(myPostTime);
@@ -60,6 +68,7 @@ const CreatePost = ({ isAuth }) => {
     }
   }, []);
 
+  // Initialize create post UI
   return (
     <div className="createPostPage">
       <div className="cpContainer">
@@ -114,7 +123,7 @@ const CreatePost = ({ isAuth }) => {
             }}
           />
         </div>
-        <button className = "uploadButton" onClick={uploadImage}> Upload Image </button>
+        <button className="uploadButton" onClick={uploadImage}> Upload Image </button>
         <div className="inputSchool">
           <label className="selectSchoolLabel">Select a university/college</label>
           <select className="selectSchool" onChange={(e) => {
@@ -128,7 +137,7 @@ const CreatePost = ({ isAuth }) => {
           </select>
         </div>
       </div>
-      <button className = "submitButton" onClick={createPost}>Submit Post</button>
+      <button className="submitButton" onClick={createPost}>Submit Post</button>
     </div>
   );
 };

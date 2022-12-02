@@ -1,19 +1,27 @@
+// Webpage of our home page
+
+// Import functions, docs, and packages
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 
+// Initialize home page
 const Home = ({ isAuth }) => {
+  // Login or not?
+  // Set up post lists, school, filtered lists features
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
   const [searchSchool, setSearchSchool] = useState("All");
   const [filteredLists, setFilteredLists] = useState([]);
 
+  // Initiate delete post function
   const deletePost = async (id) => {
     const postDoc = doc(db, "posts", id);
     await deleteDoc(postDoc);
     window.location.reload();
   };
 
+  // Trace posts from database
   useEffect(() => {
     document.title = "TradeNC";
     const getPosts = async () => {
@@ -24,6 +32,7 @@ const Home = ({ isAuth }) => {
     getPosts();
   }, []);
 
+  // Set filtered lists based on school name
   useEffect(()=> {
     setFilteredLists(
       postLists.filter(
@@ -35,6 +44,8 @@ const Home = ({ isAuth }) => {
     );
   })
 
+  // Initialize home page posts UI
+  // Create item posts map, generating UI for all the items
   return (
     <div className="homePage">
       <div className="selectSchoolHome">
