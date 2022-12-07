@@ -1,7 +1,7 @@
 {
   "name": "a99-Group04",
   "version": "1.0.0",
-  "description": "tradenc is a web app where users can post informations about items they want to sell",
+  "description": "This is a web app where users can post informations about items they want to sell",
   "author": "COMP 426 Group 4",
   "license": "GPL-3.0-or-later",
   "dependencies": {
