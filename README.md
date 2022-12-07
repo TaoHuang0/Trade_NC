@@ -1,6 +1,4 @@
 # TradeNC
-## Our Website:
-https://gotradenc.com  
 
 ## Inspiration
 We wanted a platform that allows us to trade used items with other students.
