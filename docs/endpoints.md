@@ -15,8 +15,10 @@ To begin, download the repository and run ```npm install``` in the command-line.
   }
 ```
 
+
 ## Command Line Arguments
 To begin, executing `npm start` will run the server in the default port 3000 and open up the web application automatically. Anytime you want to go the fefalult page, go to `http://localhost:3000/App` in your browser will present the default page for the app.
+
 
 ## Endpoints
 ### /App
@@ -28,8 +30,10 @@ This endpoint is used by the "Login" button on the navigation page (`http://loca
 ### /createpost
 This endpoint is used by the "Sell my item" button on the navigation page (`http://localhost:3000/App`). **Note: This button only visible to the login users.** It will brings users to the create post page. Users must login to their account through Google Authentication to create new posts. All posts will be stored in `Firebase` powered by Google.
 
+
 # Backend implementation
 We store all our data in `Firebase` and built the login function using `Google Authentication` api.
+
 
 # Front end implementation
 We build our front end using `React JS Environment`, `JavaSceipt`, `HTML` and `CSS`. There are three different views in our web application, including the `navigation` page, the `login` page, and the `createpost` page.
