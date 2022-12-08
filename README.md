@@ -15,7 +15,7 @@ P.S: We use `npm start` instead of `npm run`, but they perform the same task. Al
 Checking out our dependencies and API root points [here](https://github.com/comp426-2022-fall/a99-Group04/blob/main/docs/endpoints.md).
 
 ## Roles
-Checking out our team members and their roles [here](https://github.com/comp426-2022-fall/a99-Group04/blob/main/docs/roles.md).
+Checking out our team members and their roles [here](https://github.com/comp426-2022-fall/a99-Group04/blob/main/docs/roles.md). 
 
 ## Challenges We Ran Into and Thanks
 We had issues getting image from our database. Special thanks to Pedro Tech from Youtube for the Cloud Storage tutorial!
