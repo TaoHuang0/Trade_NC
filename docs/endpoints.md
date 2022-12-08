@@ -24,10 +24,10 @@ To begin, executing `npm start` will run the server in the default port 3000 and
 ### /App
 This endpoint redirects the user to the navigation page. Users can navigate different items posted by other login users at this page.
 
-### App/Login
+### /App/Login
 This endpoint is used by the "Login" button on the navigation page (`http://localhost:3000/App`). It will brings users to the login page. Users must login to their account through Google Authentication to create new posts. Every login user will have its own unique `ID` store in `Firebase`.
 
-### App/createpost
+### /App/createpost
 This endpoint is used by the "Sell my item" button on the navigation page (`http://localhost:3000/App`). **Note: This button only visible to the login users.** It will brings users to the create post page. Users must login to their account through Google Authentication to create new posts. All posts will be stored in `Firebase` powered by Google.
 
 
