@@ -24,4 +24,5 @@ We had issues getting image from our database. Special thanks to Pedro Tech from
 Can be polished and actually put in use among UNC students and even students from nearby universities.
 
 ## Demo Video
+Here is a demo video about how to use (login, post items, delete items, etc) our website: 
 https://youtu.be/U2RxBFLT-jQ
