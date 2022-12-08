@@ -9,7 +9,7 @@ Sometimes, a student may want to trade used items with other students. However, 
 3. Using `npm start` to start the program. You will be redirected to our website!
 4. Using `Ctrl+c` in commend line to stop the program.
 
-P.S: We use `npm start` instead of `npm run`, but they perform the same task. Also, `npm test` is available. You can use this in commend line to test the program.
+P.S: We use `npm start` instead of `npm run`, but they perform the same task. Also, `npm test` is available for our project. You can use this in commend line to test the program.
 
 ## Dependencies
 Checking out our dependencies and API root points [here](https://github.com/comp426-2022-fall/a99-Group04/blob/main/docs/endpoints.md).
