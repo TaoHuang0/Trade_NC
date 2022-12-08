@@ -22,7 +22,7 @@ To begin, executing `npm start` will run the server in the default port 3000 and
 
 ## Endpoints
 ### /App
-This endpoint redirects the user to the navigation page. Users can navigate different items posted by other login users at this page.
+This is the root page or main page of our website. This endpoint redirects the user to the navigation page. Users can navigate different items posted by other login users at this page.
 
 ### /App/Login
 This endpoint is used by the "Login" button on the navigation page (`http://localhost:3000/App`). It will brings users to the login page. Users must login to their account through Google Authentication to create new posts. Every login user will have its own unique `ID` store in `Firebase`.
