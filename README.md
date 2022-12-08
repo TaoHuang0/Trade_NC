@@ -24,3 +24,4 @@ We had issues getting image from our database. Special thanks to Pedro Tech from
 Can be polished and actually put in use among UNC students and even students from nearby universities.
 
 ## Demo video
+https://youtu.be/U2RxBFLT-jQ
