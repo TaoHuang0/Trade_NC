@@ -12,7 +12,7 @@ Sometimes, a student may want to trade used items with other students. However, 
 P.S: We use `npm start` instead of `npm run`, but they perform the same task. Also, `npm test` is available. You can use this in commend line to test the program.
 
 ## Dependencies
-Checking out our dependencies and API root points[here](https://github.com/comp426-2022-fall/a99-Group04/blob/main/docs/endpoints.md).
+Checking out our dependencies and API root points [here](https://github.com/comp426-2022-fall/a99-Group04/blob/main/docs/endpoints.md).
 
 ## Challenges we ran into
 We had issues getting image from our database. Special thanks to Pedro Tech from Youtube for the Cloud Storage tutorial!
