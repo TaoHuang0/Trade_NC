@@ -24,3 +24,12 @@ We met on 12/01
 - We started to design our ui on paper
 - We created package.json file
 - We started working on the navigation page and create post page
+
+--------------------------------------------------------------------
+## Meeting Three
+We met on 12/07
+- Finished the backend of our project
+- Finished the frontend of our project
+- Finished api documentation file
+- Finished readme.md file
+- Started record our introduction video
